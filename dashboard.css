@@ -25,10 +25,6 @@ body {
   scroll-behavior: smooth;
 }
 
-h2, h3 {
-  margin-bottom: var(--heading-margin-bottom);
-}
-
 @keyframes bodyFadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
