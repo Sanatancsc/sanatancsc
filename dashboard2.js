@@ -1,12 +1,3 @@
-// Redirect if user is not logged in
-  (function () {
-    const isLoggedIn = localStorage.getItem('authToken'); // Change this key if you use a different one
-
-    if (!isLoggedIn) {
-      // Redirect to login page if no token is found
-      window.location.href = '/login.html';
-    }
-      
 // Automatically convert Family ID and Username input to uppercase as user types or pastes
 document.addEventListener('DOMContentLoaded', function () {
     const familyIdInput = document.getElementById('familyIdInput');
