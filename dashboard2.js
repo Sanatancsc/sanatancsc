@@ -2,7 +2,7 @@
 (function () {
   const isLoggedIn = localStorage.getItem('authToken'); // Change this key name if needed
   if (!isLoggedIn) {
-    window.location.href = ''; // Redirect if not logged in
+    window.location.href = '/login.html'; // Redirect if not logged in
   }
 })();
 
