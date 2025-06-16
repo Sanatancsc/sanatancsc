@@ -1,10 +1,10 @@
-// Hardcoded username and password (For demo purposes only)
+// Hardcoded username and password
 const validUsername = "ppp";
-const validPassword = "qwertyuiop"; // Never use plain text passwords in production
+const validPassword = "qwertyuiop";
 
 // Event listener for the login form submission
 document.getElementById("loginForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form submission to handle validation manually
+    event.preventDefault();
 
     // Get the username and password input values
     const username = document.getElementById("username").value.trim();
@@ -15,7 +15,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
         // ✅ Store authentication token
         sessionStorage.setItem('authToken', 'secure_token_here');
 
-        // ✅ Store login time and status in session storage (optional)
+        // ✅ Store login time and status in session storage
         sessionStorage.setItem("loggedIn", true);
         sessionStorage.setItem("loginTime", Date.now());
 
