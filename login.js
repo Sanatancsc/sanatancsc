@@ -12,12 +12,15 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
 
     // Check if the entered username and password match the valid credentials
     if (username === validUsername && password === validPassword) {
-        // Store login time and status in session storage
+        // ✅ Store authentication token
+        localStorage.setItem('authToken', 'secure_token_here');
+
+        // ✅ Store login time and status in session storage (optional)
         sessionStorage.setItem("loggedIn", true);
         sessionStorage.setItem("loginTime", Date.now());
 
-        // Redirect to the dashboard after successful login
-        window.location.href = "dashboard.html"; // Replace with your dashboard page
+        // ✅ Redirect to the dashboard after successful login
+        window.location.href = "dashboard.html";
     } else {
         // Show error message if credentials are incorrect
         document.getElementById("error-message").style.display = "block";
