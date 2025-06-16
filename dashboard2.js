@@ -1,6 +1,6 @@
 // 🔐 Authentication Check
 (function () {
-  const isLoggedIn = sessionStorage.getItem('authToken'); // Change this key name if needed
+  const isLoggedIn = sessionStorage.getItem('authToken');
   if (!isLoggedIn) {
     window.location.href = '/index.html'; // Redirect if not logged in
   }
