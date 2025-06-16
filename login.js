@@ -13,7 +13,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     // Check if the entered username and password match the valid credentials
     if (username === validUsername && password === validPassword) {
         // ✅ Store authentication token
-        localStorage.setItem('authToken', 'secure_token_here');
+        sessionStorage.setItem('authToken', 'secure_token_here');
 
         // ✅ Store login time and status in session storage (optional)
         sessionStorage.setItem("loggedIn", true);
