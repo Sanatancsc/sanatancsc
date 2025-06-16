@@ -1,3 +1,11 @@
+// 🔐 Authentication Check
+(function () {
+  const isLoggedIn = localStorage.getItem('authToken'); // Change this key name if needed
+  if (!isLoggedIn) {
+    window.location.href = '/login.html'; // Redirect if not logged in
+  }
+})();
+
 // Automatically convert Family ID and Username input to uppercase as user types or pastes
 document.addEventListener('DOMContentLoaded', function () {
     const familyIdInput = document.getElementById('familyIdInput');
