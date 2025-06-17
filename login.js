@@ -3,8 +3,11 @@ const validUsername = "ppp";
 const validPassword = "qwertyuiop";
 
 // Event listener for the login form submission
-document.getElementById("loginForm").addEventListener("submit", function (event) {
-    event.preventDefault();
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    document.getElementById('loginForm').dispatchEvent(new Event('submit'));
+  }
+});
 
     // Get the username and password input values
     const username = document.getElementById("username").value.trim();
