@@ -22,6 +22,14 @@ body {
   letter-spacing: 1px;
 }
 
+/*-------------------- Logo Image --------------------*/
+.logo img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 0 auto 20px;
+            display: block;
+}
 /*-------------------- Login Container --------------------*/
 .container {
   background-color: #fff;
